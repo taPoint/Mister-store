@@ -1,0 +1,595 @@
+/* ========== АНИМАЦИИ ДЛЯ САЙТА MISTER ========== */
+
+/* Базовые стили для анимаций */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-down {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-down.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-up.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-left.animate-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-right.animate-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-in-scale {
+  opacity: 0;
+  transform: scale(0.9) translateY(20px);
+  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-scale.animate-in {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.fade-in-card {
+  opacity: 0;
+  transform: translateY(35px) scale(0.96);
+  transition: all 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-card.animate-in {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.fade-in-glow {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-glow.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+  animation: glowEffect 2s ease-out;
+}
+
+/* Задержки для каскадного появления */
+.delay-1 {
+  transition-delay: 0.2s;
+}
+.delay-2 {
+  transition-delay: 0.4s;
+}
+.delay-3 {
+  transition-delay: 0.6s;
+}
+.delay-4 {
+  transition-delay: 0.8s;
+}
+.delay-5 {
+  transition-delay: 1s;
+}
+.delay-6 {
+  transition-delay: 1.2s;
+}
+.delay-7 {
+  transition-delay: 1.4s;
+}
+.delay-8 {
+  transition-delay: 1.6s;
+}
+
+/* ========== АНИМАЦИИ HERO СЕКЦИИ ========== */
+
+/* Хедер */
+.header {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: headerSlideDown 1s ease-out forwards;
+}
+
+@keyframes headerSlideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero анимации */
+.hero-title {
+  opacity: 0;
+  transform: translateY(50px) scale(0.95);
+  animation: heroTitleAppear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s
+    forwards;
+}
+
+.hero-subtitle {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s forwards;
+}
+
+.hero-description {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s forwards;
+}
+
+.hero-buttons {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeInUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.3s forwards;
+}
+
+@keyframes heroTitleAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.95);
+  }
+  60% {
+    opacity: 0.8;
+    transform: translateY(10px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== АНИМАЦИИ КАРТОЧЕК ========== */
+
+/* Карточки категорий */
+.category-card {
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: all 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.category-card.animate-in {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Карточки товаров */
+.product-card {
+  opacity: 0;
+  transform: translateY(35px) rotateX(5deg);
+  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.product-card.animate-in {
+  opacity: 1;
+  transform: translateY(0) rotateX(0deg);
+}
+
+/* Элементы преимуществ */
+.advantage-item {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.advantage-item.animate-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Слайды отзывов */
+.review-slide {
+  opacity: 0;
+  transform: translateY(40px) scale(0.96);
+  transition: all 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.review-slide.animate-in {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Исключаем слайды отзывов из общих анимаций */
+.reviews__slide {
+  animation: none !important;
+}
+
+/* ПОЛНОЕ ИСКЛЮЧЕНИЕ КАРУСЕЛИ ОТЗЫВОВ ИЗ АНИМАЦИОННОЙ СИСТЕМЫ */
+.reviews__slide,
+.reviews__slide.active,
+.reviews__slide.prev,
+.reviews__slide.next,
+.reviews__slide.fade-in,
+.reviews__slide.fade-in-up,
+.reviews__slide.fade-in-scale,
+.reviews__slide.fade-in-card,
+.reviews__slide.animate-in {
+  animation: none !important;
+  transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+/* Принудительно сбрасываем все анимационные transform'ы для карусели */
+.reviews__slide.active {
+  left: 50% !important;
+  transform: translate(-50%, -50%) scale(1) !important;
+  opacity: 1 !important;
+  z-index: 3 !important;
+}
+
+.reviews__slide.prev {
+  left: 15% !important;
+  transform: translate(-50%, -50%) scale(0.85) !important;
+  opacity: 0.6 !important;
+  z-index: 2 !important;
+}
+
+.reviews__slide.next {
+  left: 85% !important;
+  transform: translate(-50%, -50%) scale(0.85) !important;
+  opacity: 0.6 !important;
+  z-index: 2 !important;
+}
+
+/* Отключаем все возможные анимации для секции отзывов */
+.reviews * {
+  animation: none !important;
+}
+
+/* Элементы галереи */
+.gallery-item {
+  opacity: 0;
+  transform: translateY(30px) scale(0.97);
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.gallery-item.animate-in {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Группы формы */
+.form-group {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.form-group.animate-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ========== СПЕЦИАЛЬНЫЕ ЭФФЕКТЫ ========== */
+
+/* Эффект свечения для бонусной секции */
+@keyframes glowEffect {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+/* Волновой эффект */
+.wave-effect {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.wave-effect.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+  animation: waveAnimation 2s ease-out;
+}
+
+@keyframes waveAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-2px);
+  }
+}
+
+/* ========== ВОССТАНОВЛЕНИЕ ОРИГИНАЛЬНЫХ TRANSITION ========== */
+
+/* Восстанавливаем оригинальные transition после завершения анимаций появления */
+.animate-in.header__menu-link {
+  transition: all 0.3s ease;
+}
+
+.animate-in.header__login-btn {
+  transition: all 0.3s ease;
+}
+
+.animate-in.hero__btn {
+  transition: all 0.3s ease;
+}
+
+.animate-in.about__card-link {
+  transition: all 0.3s ease;
+}
+
+.animate-in.categories__card {
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.animate-in.categories__icon {
+  transition: all 0.3s ease;
+}
+
+.animate-in.categories__link {
+  transition: all 0.3s ease;
+}
+
+.animate-in.advantages__icon {
+  transition: all 0.3s ease;
+}
+
+.animate-in.reviews__arrow {
+  transition: all 0.3s ease;
+}
+
+.animate-in.reviews__client-photo {
+  transition: all 0.3s ease;
+}
+
+.animate-in.bonus__btn {
+  transition: all 0.3s ease;
+}
+
+.animate-in.bonus__link {
+  transition: all 0.3s ease;
+}
+
+.animate-in.gallery__item {
+  transition: all 0.3s ease;
+}
+
+.animate-in.gallery__caption {
+  transition: transform 0.3s ease;
+}
+
+.animate-in.products__card {
+  transition: all 0.3s ease;
+}
+
+.animate-in.products__image img {
+  transition: transform 0.5s ease;
+}
+
+.animate-in.products__btn {
+  transition: all 0.3s ease;
+}
+
+.animate-in.products__link {
+  transition: all 0.3s ease;
+}
+
+.animate-in.contacts__link {
+  transition: all 0.3s ease;
+}
+
+.animate-in.feedback-form__input,
+.animate-in.feedback-form__textarea {
+  transition: all 0.3s ease;
+}
+
+.animate-in.feedback-form__submit {
+  transition: all 0.3s ease;
+}
+
+.animate-in.footer__menu-link {
+  transition: color 0.3s ease;
+}
+
+.animate-in.footer__contacts-link {
+  transition: color 0.3s ease;
+}
+
+.animate-in.footer__legal-link {
+  transition: color 0.3s ease;
+}
+
+/* ========== ЭФФЕКТЫ ПРИ НАВЕДЕНИИ ========== */
+
+/* Улучшенные эффекты при наведении для анимированных элементов */
+.animate-in.categories__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.animate-in.products__card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.animate-in.gallery__item:hover {
+  transform: scale(1.01);
+  z-index: 2;
+}
+
+.animate-in.advantages__item:hover .advantages__icon {
+  transform: scale(1.05);
+}
+
+/* Дополнительные hover эффекты */
+.animate-in.about__card-link:hover {
+  color: var(--text-dark);
+  transform: translateX(3px);
+}
+
+.animate-in.categories__link:hover {
+  color: var(--text-dark);
+}
+
+.animate-in.products__link:hover {
+  color: var(--text-dark);
+}
+
+/* ========== РЕСПЕКТ К НАСТРОЙКАМ ПОЛЬЗОВАТЕЛЯ ========== */
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  .fade-in-down,
+  .fade-in-up,
+  .fade-in-left,
+  .fade-in-right,
+  .fade-in-scale,
+  .fade-in-card,
+  .fade-in-glow,
+  .category-card,
+  .product-card,
+  .advantage-item,
+  .review-slide,
+  .gallery-item,
+  .form-group,
+  .wave-effect {
+    transition: opacity 0.6s ease !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  .header {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hero-title,
+  .hero-subtitle,
+  .hero-description,
+  .hero-buttons {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .fade-in.animate-in,
+  .fade-in-down.animate-in,
+  .fade-in-up.animate-in,
+  .fade-in-left.animate-in,
+  .fade-in-right.animate-in,
+  .fade-in-scale.animate-in,
+  .fade-in-card.animate-in,
+  .fade-in-glow.animate-in,
+  .category-card.animate-in,
+  .product-card.animate-in,
+  .advantage-item.animate-in,
+  .review-slide.animate-in,
+  .gallery-item.animate-in,
+  .form-group.animate-in,
+  .wave-effect.animate-in {
+    transform: none !important;
+    animation: none !important;
+  }
+
+  .category-card:hover,
+  .product-card:hover,
+  .gallery-item:hover,
+  .advantage-item:hover {
+    transform: none !important;
+  }
+}
+
+/* ========== ДОПОЛНИТЕЛЬНЫЕ АНИМАЦИИ ========== */
+
+/* Анимация для счетчиков (если будут добавлены) */
+.counter {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.counter.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Анимация для прогресс-баров (если будут добавлены) */
+.progress-bar {
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.progress-bar.animate-in {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* Анимация для иконок */
+.icon-bounce {
+  animation: iconBounce 2s infinite;
+}
+
+@keyframes iconBounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}

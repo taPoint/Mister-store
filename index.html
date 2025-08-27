@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mister — Салон мужской одежды</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+      <div class="header__container">
+        <!-- Логотип -->
+        <a href="index.html" class="header__logo">
+          <span class="header__logo-text">MISTER</span>
+        </a>
+
+        <!-- Основное меню -->
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="catalog.html" class="header__menu-link">Каталог</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#categories" class="header__menu-link">Коллекции</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#about" class="header__menu-link">О нас</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#contacts" class="header__menu-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Кнопка входа -->
+        <div class="header__auth">
+          <a href="login.html" class="header__login-btn">Войти →</a>
+          <button class="header__mobile-toggle" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__main-title hero-title">MISTER</h1>
+        <h2 class="hero__subtitle hero-subtitle delay-1">
+          Премиальная мужская одежда для современного джентльмена
+        </h2>
+        <p class="hero__description hero-description delay-2">
+          Откройте для себя эксклюзивную коллекцию качественной мужской одежды.
+          От деловых костюмов до повседневной одежды - всё для создания
+          безупречного образа.
+        </p>
+        <div class="hero__buttons hero-buttons delay-3">
+          <a href="catalog.html" class="hero__btn">Посмотреть каталог</a>
+          <a href="contacts.html" class="hero__btn">Связаться с нами</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок "О нас" -->
+    <section class="about">
+      <div class="about__container">
+        <p class="about__subtitle fade-in">О нас</p>
+        <h2 class="about__title section-title delay-1">
+          Salon Mister - стиль и качество
+        </h2>
+        <p class="about__description section-subtitle delay-2">
+          Salon Mister - это воплощение стиля и качества в мужской моде. Мы
+          предлагаем тщательно подобранные коллекции одежды для мужчин, которые
+          ценят безупречный вкус и комфорт.
+        </p>
+
+        <div class="about__cards">
+          <!-- Карточка 1: Опыт -->
+          <div class="about__card about-card delay-3">
+            <div class="about__card-header">
+              <div class="about__card-icon">
+                <i data-lucide="award"></i>
+              </div>
+              <h3 class="about__card-title">Опыт и экспертиза</h3>
+            </div>
+            <p class="about__card-text">
+              Более 10 лет опыта в мужской моде. Наши стилисты знают все
+              тонкости создания идеального образа для современного мужчины.
+            </p>
+            <a href="about.html#experience" class="about__card-link"
+              >Узнать больше</a
+            >
+          </div>
+
+          <!-- Карточка 2: Индивидуальный подход -->
+          <div class="about__card about-card delay-4">
+            <div class="about__card-header">
+              <div class="about__card-icon">
+                <i data-lucide="user"></i>
+              </div>
+              <h3 class="about__card-title">Индивидуальный подход</h3>
+            </div>
+            <p class="about__card-text">
+              Персональные консультации по стилю и подбору одежды. Мы учитываем
+              ваши предпочтения, образ жизни и особенности фигуры.
+            </p>
+            <a href="about.html#personal" class="about__card-link"
+              >Узнать больше</a
+            >
+          </div>
+
+          <!-- Карточка 3: Качество -->
+          <div class="about__card about-card delay-5">
+            <div class="about__card-header">
+              <div class="about__card-icon">
+                <i data-lucide="shield"></i>
+              </div>
+              <h3 class="about__card-title">Проверенное качество</h3>
+            </div>
+            <p class="about__card-text">
+              Работаем только с премиальными тканями и проверенными брендами.
+              Гарантируем долговечность и безупречный вид каждого изделия.
+            </p>
+            <a href="about.html#quality" class="about__card-link"
+              >Узнать больше</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Каталог категорий -->
+    <section class="categories">
+      <div class="categories__container">
+        <h2 class="categories__title">Большой ассортимент одежды</h2>
+        <p class="about__description">
+          Широкий выбор качественной одежды для всей семьи. От классики до
+          современных трендов — найдите идеальный стиль для себя.
+        </p>
+
+        <div class="categories__grid">
+          <!-- Карточка 1: Сорочки -->
+          <div class="categories__card">
+            <div class="categories__image">
+              <img
+                src="https://sun9-64.userapi.com/s/v1/ig2/JryXfd9rR3BUKKJLL1A8AX3bFE-f_mJ4iJcT46Vp-LD5GAsNBRadJG6o2y3O63OjxQRqTw8ggweVGTm_7PtbQTqD.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0"
+                alt="Сорочки"
+              />
+            </div>
+            <div class="categories__content">
+              <div class="categories__header">
+                <div class="categories__icon">
+                  <i data-lucide="briefcase"></i>
+                </div>
+                <h3 class="categories__name">Сорочки</h3>
+              </div>
+              <p class="categories__description">
+                Классические и оригинальные цветовые решения
+              </p>
+              <a href="catalog.html#shirts" class="categories__link"
+                >Смотреть коллекцию</a
+              >
+            </div>
+          </div>
+
+          <!-- Карточка 2: Брюки -->
+          <div class="categories__card">
+            <div class="categories__image">
+              <img
+                src="https://sun9-31.userapi.com/s/v1/ig2/y4dcNmohNZYsmSXH7K6ggasvUI1vKKbPx1EREn97RUIgSwNKeZTitkpRpQxR1UuuV3xHOPcDz1r4tRYTT9ylfKdx.jpg?quality=95&as=32x40,48x60,72x90,108x135,160x200,240x300,360x450,480x601,540x676,640x801,720x901,1023x1280&from=bu&u=SircL9FjeaXAUejjYbeNxr6aGRIWaLceWisQwHTKNzg&cs=540x0"
+                alt="Брюки"
+              />
+            </div>
+            <div class="categories__content">
+              <div class="categories__header">
+                <div class="categories__icon">
+                  <i data-lucide="scissors"></i>
+                </div>
+                <h3 class="categories__name">Брюки</h3>
+              </div>
+              <p class="categories__description">
+                Комфортные брюки для работы и отдыха
+              </p>
+              <a href="catalog.html#pants" class="categories__link"
+                >Смотреть коллекцию</a
+              >
+            </div>
+          </div>
+
+          <!-- Костюмы -->
+          <div class="categories__card">
+            <div class="categories__image">
+              <img
+                src="https://sun9-49.userapi.com/s/v1/ig2/GsDhwpG6PmIWYAoYzTcLu0J0qpBKVBokSYoYbYsha79ophJYrwq97ksed9WlXafbXt1GrhIR5pgTCRjXBExhQbeD.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,1080x1620,1280x1920,1365x2048&from=bu&cs=1365x0"
+                alt="Костюмы"
+              />
+            </div>
+            <div class="categories__content">
+              <div class="categories__header">
+                <div class="categories__icon">
+                  <i data-lucide="shirt"></i>
+                </div>
+                <h3 class="categories__name">Костюмы</h3>
+              </div>
+              <p class="categories__description">
+                Безупречный стиль делового человека
+              </p>
+              <a href="catalog.html#jumpers" class="categories__link"
+                >Смотреть коллекцию</a
+              >
+            </div>
+          </div>
+
+          <!-- Карточка 4: Пиджаки -->
+          <div class="categories__card">
+            <div class="categories__image">
+              <img
+                src="https://sun9-53.userapi.com/s/v1/ig2/RdGwjPhGeeTScdErMPSaxGI2hefoostqqUHp-d5NhFpx8XoNSdaL_A_234plYSFWnOMUPbv1UJXCHlXnNjyFbrXn.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,1080x1621,1280x1921,1440x2161,1706x2560&from=bu&cs=1706x0"
+                alt="Пиджаки"
+              />
+            </div>
+            <div class="categories__content">
+              <div class="categories__header">
+                <div class="categories__icon">
+                  <i data-lucide="layers"></i>
+                </div>
+                <h3 class="categories__name">Пиджаки</h3>
+              </div>
+              <p class="categories__description">
+                Модные джинсы различных фасонов
+              </p>
+              <a href="catalog.html#jeans" class="categories__link"
+                >Смотреть коллекцию</a
+              >
+            </div>
+          </div>
+
+          <!-- Карточка 5: Школьная коллекция -->
+          <div class="categories__card">
+            <div class="categories__image">
+              <img
+                src="https://sun9-67.userapi.com/s/v1/ig2/evUtBtSNmNcF2lpybI65cZyRqRBnV5N7CqUDp_7pXp4pP31NxM2xqzXAfOcC4QD_yJiL1h71YljtG72s0ApWN1y8.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,1080x1621,1280x1921,1440x2161,1706x2560&from=bu&cs=1706x0"
+                alt="Школьная коллекция"
+              />
+            </div>
+            <div class="categories__content">
+              <div class="categories__header">
+                <div class="categories__icon">
+                  <i data-lucide="school"></i>
+                </div>
+                <h3 class="categories__name">Школьная коллекция</h3>
+              </div>
+              <p class="categories__description">
+                Специальная коллекция для школьников
+              </p>
+              <a href="catalog.html#school" class="categories__link"
+                >Смотреть коллекцию</a
+              >
+            </div>
+          </div>
+
+          <!-- Карточка 6: Аксессуары -->
+          <div class="categories__card">
+            <div class="categories__image">
+              <img
+                src="https://sun9-67.userapi.com/s/v1/ig2/wlN2biwHwO3Yn4TY_Xktn5F9NxUrbMhuv_U2ECQMHyEt-kThHnmhzXX0BBv4fbeWIBr0CrUUCv07ER7MeLP_I_Xr.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,1080x1621,1280x1921,1440x2161,1706x2560&from=bu&cs=1706x0"
+                alt="Аксессуары"
+              />
+            </div>
+            <div class="categories__content">
+              <div class="categories__header">
+                <div class="categories__icon">
+                  <i data-lucide="watch"></i>
+                </div>
+                <h3 class="categories__name">Аксессуары</h3>
+              </div>
+              <p class="categories__description">
+                Дополните образ стильными аксессуарами
+              </p>
+              <a href="catalog.html#accessories" class="categories__link"
+                >Смотреть коллекцию</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="advantages">
+      <div class="advantages__container">
+        <p class="advantages__subtitle">Почему выбирают нас</p>
+        <h2 class="advantages__title">Наши преимущества</h2>
+        <p class="advantages__description">
+          Мы создаём исключительный опыт покупки премиальной одежды, сочетая
+          качество, разнообразие и безупречный сервис.
+        </p>
+
+        <div class="advantages__list">
+          <!-- Преимущество 1: Качество -->
+          <div class="advantages__item">
+            <div class="advantages__icon">
+              <i data-lucide="award"></i>
+            </div>
+            <div class="advantages__content">
+              <h3 class="advantages__item-title">Качество</h3>
+              <p class="advantages__item-text">
+                Только премиальные материалы и безупречное качество пошива от
+                проверенных производителей.
+              </p>
+            </div>
+          </div>
+
+          <!-- Преимущество 2: Ассортимент -->
+          <div class="advantages__item">
+            <div class="advantages__icon">
+              <i data-lucide="grid"></i>
+            </div>
+            <div class="advantages__content">
+              <h3 class="advantages__item-title">Ассортимент</h3>
+              <p class="advantages__item-text">
+                Более 3000 наименований: широкий выбор стилей и брендов для
+                создания идеального образа на любой случай.
+              </p>
+            </div>
+          </div>
+
+          <!-- Преимущество 3: Размерный ряд -->
+          <div class="advantages__item">
+            <div class="advantages__icon">
+              <i data-lucide="ruler"></i>
+            </div>
+            <div class="advantages__content">
+              <h3 class="advantages__item-title">Размерный ряд</h3>
+              <p class="advantages__item-text">
+                Полная линейка размеров (44−64), чтобы каждый клиент нашёл
+                идеальную посадку.
+              </p>
+            </div>
+          </div>
+
+          <!-- Преимущество 4: Квалифицированная помощь -->
+          <div class="advantages__item">
+            <div class="advantages__icon">
+              <i data-lucide="users"></i>
+            </div>
+            <div class="advantages__content">
+              <h3 class="advantages__item-title">Квалифицированная помощь</h3>
+              <p class="advantages__item-text">
+                Консультации опытных стилистов для создания безупречного образа.
+              </p>
+            </div>
+          </div>
+
+          <!-- Преимущество 5: Доставка -->
+          <div class="advantages__item">
+            <div class="advantages__icon">
+              <i data-lucide="truck"></i>
+            </div>
+            <div class="advantages__content">
+              <h3 class="advantages__item-title">Доставка</h3>
+              <p class="advantages__item-text">
+                Удобные варианты доставки с возможностью примерки перед
+                покупкой.
+              </p>
+            </div>
+          </div>
+
+          <!-- Преимущество 6: Гарантия -->
+          <div class="advantages__item">
+            <div class="advantages__icon">
+              <i data-lucide="refresh-cw"></i>
+            </div>
+            <div class="advantages__content">
+              <h3 class="advantages__item-title">Гарантия/обмен</h3>
+              <p class="advantages__item-text">
+                Простая система возврата и обмена в течение 14 дней для вашего
+                полного удовлетворения.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Отзывы клиентов -->
+    <section class="reviews">
+      <div class="reviews__container">
+        <h2 class="reviews__title">Отзывы клиентов</h2>
+        <p class="reviews__subtitle">
+          Узнайте, что говорят наши клиенты о высоком качестве одежды и
+          профессиональном сервисе в Mister.
+        </p>
+
+        <div class="reviews__slider">
+          <!-- Отзыв 1 -->
+          <div class="reviews__slide">
+            <div class="reviews__client-photo"></div>
+            <div class="reviews__client-info">
+              <h3 class="reviews__client-name">Юрий Орлов</h3>
+              <p class="reviews__client-position">Топ-менеджер</p>
+            </div>
+            <div class="reviews__rating">
+              <span class="reviews__star"></span>
+              <span class="reviews__star"></span>
+              <span class="reviews__star"></span>
+              <span class="reviews__star"></span>
+              <span class="reviews__star"></span>
+            </div>
+            <blockquote class="reviews__text">
+              Отличный консультант, большой выбор костюмов хорошего качества с
+              приятной ценой.
+            </blockquote>
+          </div>
+
+          <!-- Отзыв 2 -->
+          <div class="reviews__slide">
+            <div class="reviews__client-photo"></div>
+            <div class="reviews__client-info">
+              <h3 class="reviews__client-name">Наталья Усольцева</h3>
+              <p class="reviews__client-position">Юрист</p>
+            </div>
+            <div class="reviews__rating">
+              <span class="reviews__star"></span>
+              <span class="reviews__star"></span>
+              <span class="reviews__star"></span>
+              <span class="reviews__star"></span>
+              <span class="reviews__star"></span>
+            </div>
+            <blockquote class="reviews__text">
+              Замечательный магазин мужской одежды. Подобрали супругу сразу два
+              образа – классический с костюмом и рубашками и трикотажный
+              кардиган. Хороший выбор, стильный дизайн магазина и менеджер –
+              профессионал своего дела. Спасибо, обязательно вернёмся еще для
+              пополнения гардероба!
+            </blockquote>
+          </div>
+
+          <!-- Отзыв 3 -->
+          <div class="reviews__slide">
+            <div class="reviews__client-photo"></div>
+            <div class="reviews__client-info">
+              <h3 class="reviews__client-name">Анна Шунтикова</h3>
+              <p class="reviews__client-position">Предприниматель</p>
+            </div>
+            <div class="reviews__rating">
+              <span class="reviews__star"></span>
+              <span class="reviews__star"></span>
+              <span class="reviews__star"></span>
+              <span class="reviews__star"></span>
+              <span class="reviews__star"></span>
+            </div>
+            <blockquote class="reviews__text">
+              Приятный персонал, качество вещей на высоте, хорошая
+              ассортиментная группа, можно подобрать образ на любой случай.
+              Рекомендую!
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="reviews__controls">
+          <div class="reviews__arrow reviews__arrow--prev"></div>
+          <div class="reviews__arrow reviews__arrow--next"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Бонусное предложение -->
+    <section class="bonus">
+      <div class="bonus__container">
+        <div class="bonus__content">
+          <div class="bonus__text">
+            <h2 class="bonus__title">Забери бонус</h2>
+            <p class="bonus__description">
+              Получите скидку 15% на первую покупку при регистрации в нашей
+              программе лояльности. Эксклюзивные предложения и персональные
+              скидки для постоянных клиентов.
+            </p>
+          </div>
+          <div class="bonus__actions">
+            <a
+              href="https://mister.uds.app/c/join?ref=ycuv5535"
+              class="bonus__btn"
+              >Получить бонус</a
+            >
+            <a href="#details" class="bonus__link">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Галерея -->
+    <section class="gallery">
+      <div class="gallery__container">
+        <h2 class="gallery__title">Галерея</h2>
+        <p class="gallery__subtitle">
+          Окунитесь в атмосферу изысканности и стиля нашего магазина
+        </p>
+
+        <div class="gallery__grid">
+          <!-- Изображение 1 -->
+          <figure class="gallery__item">
+            <img
+              src="https://sun9-63.userapi.com/s/v1/ig2/Lf9Fc1V-OIPf986pEslDMNOkRV2DWVkHqWW83h8cND44hkd8AHdja4IE2lKt0NF-g9-dQ7TyXy2jnTE6KVd_lRg9.jpg?quality=95&as=32x45,48x67,72x101,108x151,160x224,240x336,360x504,480x672,540x756,640x896,720x1008,1080x1512,1280x1792,1440x2016,1829x2560&from=bu&u=WjAlMOryqfD1MMoMw7yAk0Pv3r_uEv5l65wfAXxH7kA&cs=540x0"
+              alt="Описание"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Подпись</figcaption>
+          </figure>
+
+          <!-- Изображение 2 -->
+          <figure class="gallery__item">
+            <img
+              src="https://images.unsplash.com/photo-1555529669-2269763671c0?w=600&q=80"
+              alt="Описание"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Подпись</figcaption>
+          </figure>
+
+          <!-- Изображение 3 -->
+          <figure class="gallery__item">
+            <img
+              src="https://sun9-74.userapi.com/s/v1/ig2/xKZwR810QqchtOQfMsD3B7LKbh4aE2KW69u5SdjfmHEVxEbBrEzYT0RyJlPViZzyL02X08-WuRkAgz-tNnR9HLFJ.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,1080x1620,1280x1920,1440x2160,1707x2560&from=bu&u=eG3kRgRhfTZGUksVwShnMselOkyo_js82i-pYambFi0&cs=540x0"
+              alt="Описание"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Подпись</figcaption>
+          </figure>
+
+          <!-- Изображение 4 -->
+          <figure class="gallery__item">
+            <img
+              src="https://sun9-70.userapi.com/s/v1/ig2/t6GCnOJ0qQXWvHvzjUO1HmwM8BLarP8BDXISXKH4-6dB59asTATpJID9mB5VtMKo-G3bSt0sPHjVD01do0D7xIG-.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,1080x1620,1280x1920,1440x2160,1707x2560&from=bu&u=X838ATRI6eWBhG5QeDrYqI0Qlroo8BPas93zPiiLXk0&cs=540x0"
+              alt="Описание"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Подпись</figcaption>
+          </figure>
+
+          <!-- Изображение 5 -->
+          <figure class="gallery__item">
+            <img
+              src="https://sun9-21.userapi.com/s/v1/ig2/YRuDfTC0AkoQZsLCLkLi1ZavaIaEyPadvV3QGe1j_OOty-dw6C26MdF41RBw_aVx3Kom0PDnjXU893Kr4-GeMpQn.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,1080x1620,1280x1920,1440x2160,1707x2560&from=bu&u=Y9D2wvYGZqrLKSqCJPnrzxdoxqBK1jM_0HHvtHNc7QM&cs=540x0"
+              alt="Описание"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Подпись</figcaption>
+          </figure>
+
+          <!-- Изображение 6 -->
+          <figure class="gallery__item">
+            <img
+              src="https://sun9-39.userapi.com/s/v1/ig2/hEcc7E5Yh8xrs6v7vB9fWlzPbs7N-1TfYFujGy-WWkIy7vOUqpVGhBjnNDY1TchUbS9KVj7Dsj2v3H9PuRVWUUno.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,1080x1620,1280x1920,1440x2160,1707x2560&from=bu&u=kJS_MmdXqqm0V1fjlRKDKlmMzF7_IC5DCaRZ2_uZ530&cs=540x0"
+              alt="Описание"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Подпись</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Популярные товары -->
+    <section class="products">
+      <div class="products__container">
+        <h2 class="products__title">Популярные товары</h2>
+        <p class="products__subtitle">
+          Откройте для себя нашу коллекцию самых востребованных предметов
+          одежды, созданных с вниманием к деталям и качеству
+        </p>
+
+        <div class="products__grid">
+          <!-- Товар 1 -->
+          <article class="products__card">
+            <div class="products__image">
+              <img
+                src="https://sun9-55.userapi.com/s/v1/ig2/fqWlIS9C2HOx4vj5GPuD8Vs-qJzDnUwn33RDp4fPOzaXSHh8Ris2bz39b-ar-LrBfnFKnCgMJ_UeHGRN-hqlF-pM.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,1080x1620,1280x1920,1440x2160,1707x2560&from=bu&u=Lot3FvNP6DgIARfxsETZ4yEwnb-dOR0vSbhIAawhOfY&cs=540x0"
+                alt="Классическая рубашка"
+              />
+            </div>
+            <div class="products__info">
+              <h3 class="products__name">Классическая рубашка</h3>
+              <p class="products__description">
+                Элегантная рубашка из натурального хлопка для делового стиля
+              </p>
+              <div class="products__footer">
+                <div class="products__price">4 500 ₽</div>
+                <button class="products__btn">
+                  <i data-lucide="shopping-cart"></i>
+                  <span>В корзину</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Товар 2 -->
+          <article class="products__card">
+            <div class="products__image">
+              <img
+                src="https://sun9-56.userapi.com/s/v1/ig2/a85hMDNwHKBwzrEZq6MxEH1-YJsbmdjrWgLKYpPi_t-9yBCLiQXVk5UUk6bf7FXbYr1THo68uxRLU-YDH-O4zwXp.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,853x1280&from=bu&u=jwTelOINGPsHqYAb6XIcm4VhAKeG5K34NwXqTUd_8hs&cs=540x0"
+                alt="Шерстяной джемпер"
+              />
+            </div>
+            <div class="products__info">
+              <h3 class="products__name">Шерстяной джемпер</h3>
+              <p class="products__description">
+                Тёплый джемпер из мериносовой шерсти для комфорта
+              </p>
+              <div class="products__footer">
+                <div class="products__price">7 200 ₽</div>
+                <button class="products__btn">
+                  <i data-lucide="shopping-cart"></i>
+                  <span>В корзину</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Товар 3 -->
+          <article class="products__card">
+            <div class="products__image">
+              <img
+                src="https://sun9-77.userapi.com/s/v1/ig2/56FM9BoukMtfUFqto8XXVdWOHZo1D9TAQgyQlZdCy58rOaSaGk-lBeGia8PBZLbNEbuQPyb6fY4CvN_ODJJPR06X.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,1080x1620,1280x1920,1440x2160,1707x2560&from=bu&u=rWqznLVW3Z_uRf3xk6A4ZdoSNoDfqdlyjNWyP37qJI0&cs=540x0"
+                alt="Поло длинный рукав"
+              />
+            </div>
+            <div class="products__info">
+              <h3 class="products__name">Поло длинный рукав</h3>
+              <p class="products__description">
+                Универсальная поло из мягкого хлопка с аккуратной посадкой
+              </p>
+              <div class="products__footer">
+                <div class="products__price">3 700 ₽</div>
+                <button class="products__btn">
+                  <i data-lucide="shopping-cart"></i>
+                  <span>В корзину</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Товар 4 -->
+          <article class="products__card">
+            <div class="products__image">
+              <img
+                src="https://sun9-82.userapi.com/s/v1/ig2/CP0kfy92gXKnKPdloobNW-DbyDB4blQqTP0wAaUTmAfO4Zn9QumL71y0Ac_6E4XCoFgE-3QRCeRHanBFG_PMTAv7.jpg?quality=95&as=32x47,48x71,72x107,108x160,160x237,240x355,360x533,480x711,540x800,640x948,720x1066,1080x1600,1170x1733&from=bu&u=d7WuU4_9SlSzoDzX6f-Ae_BcoXbinaemVF2GCFLALiM&cs=540x0"
+                alt="Деловые брюки"
+              />
+            </div>
+            <div class="products__info">
+              <h3 class="products__name">Деловые брюки</h3>
+              <p class="products__description">
+                Стильные брюки из качественной костюмной ткани
+              </p>
+              <div class="products__footer">
+                <div class="products__price">5 800 ₽</div>
+                <button class="products__btn">
+                  <i data-lucide="shopping-cart"></i>
+                  <span>В корзину</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Товар 5 -->
+          <article class="products__card">
+            <div class="products__image">
+              <img
+                src="https://sun9-79.userapi.com/s/v1/ig2/rQv3cOrlB6vSQisttBILo7sBgXWK_W604Y9Ojshdbin-0IAh6hKubOnc_i4L--YXbKKAwlrtuQz2NSnqkN_Usgsi.jpg?quality=95&as=32x40,48x60,72x90,108x135,160x200,240x300,360x450,480x600,540x675,640x800,720x900,1080x1351,1280x1601,1440x1801,2047x2560&from=bu&cs=2047x0"
+                alt="Клетчатый пиджак"
+              />
+            </div>
+            <div class="products__info">
+              <h3 class="products__name">Клетчатый пиджак</h3>
+              <p class="products__description">
+                Стильный пиджак в клетку – дерзкий акцент в деловом и
+                кэжуал-образе
+              </p>
+              <div class="products__footer">
+                <div class="products__price">12 000 ₽</div>
+                <button class="products__btn">
+                  <i data-lucide="shopping-cart"></i>
+                  <span>В корзину</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Товар 6 -->
+          <article class="products__card">
+            <div class="products__image">
+              <img src="kostum.jpg" alt="Костюм VC" />
+            </div>
+            <div class="products__info">
+              <h3 class="products__name">Костюм VC</h3>
+              <p class="products__description">
+                Премиальный костюм от VC: безупречный крой, элитные ткани и
+                статусный силуэт
+              </p>
+              <div class="products__footer">
+                <div class="products__price">21 300 ₽</div>
+                <button class="products__btn">
+                  <i data-lucide="shopping-cart"></i>
+                  <span>В корзину</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Товар 7 -->
+          <article class="products__card">
+            <div class="products__image">
+              <img
+                src="https://sun9-41.userapi.com/s/v1/ig2/7_BMSnCJyIU-TSwtzuIBnLCugI4lbB9oajSeo7xaUyS-OeyICeqKr-Mywi3li4b4n7_MCUrFsMV0yhVjpH5ohX9V.jpg?quality=96&as=32x57,48x85,72x128,108x192,160x284,240x427,360x640,480x853,540x960,640x1138,720x1280,1080x1920,1215x2160&from=bu&u=27aXivUYDlIldVNudNwmnsWf5PrOBII3BIYt-2IE9Tw&cs=540x0"
+                alt="Вязаный кардиган"
+              />
+            </div>
+            <div class="products__info">
+              <h3 class="products__name">Кардиган</h3>
+              <p class="products__description">
+                Стильный вязаный кардиган для уютного и современного образа
+              </p>
+              <div class="products__footer">
+                <div class="products__price">11 700 ₽</div>
+                <button class="products__btn">
+                  <i data-lucide="shopping-cart"></i>
+                  <span>В корзину</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Товар 8 -->
+          <article class="products__card">
+            <div class="products__image">
+              <img
+                src="https://sun9-79.userapi.com/s/v1/ig2/3nlLvengoqJvydW5hgDoJUIC9bLABT5LyBtmT0gm_XvETLhfzZNj-0PifIdmDAsJ5Rm49fEh67l5LcOYHsTB4oEU.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,1080x1620,1280x1920,1440x2160,1707x2560&from=bu&u=es9m2oWaUOyy_2xOEUd71hSGCGL2GsXs0Q_3NHIy1FQ&cs=540x0"
+                alt="Шёлковый шарф"
+              />
+            </div>
+            <div class="products__info">
+              <h3 class="products__name">Шёлковый шарф</h3>
+              <p class="products__description">
+                Изысканный шарф из натурального шёлка
+              </p>
+              <div class="products__footer">
+                <div class="products__price">2 800 ₽</div>
+                <button class="products__btn">
+                  <i data-lucide="shopping-cart"></i>
+                  <span>В корзину</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="products__more">
+          <a href="catalog.html" class="products__link"
+            >Посмотреть все товары</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок контактов -->
+    <section class="contacts">
+      <div class="contacts__container">
+        <div class="contacts__content">
+          <!-- Контактная информация -->
+          <div class="contacts__info">
+            <div class="contacts__heading">
+              <h2 class="contacts__title">Контакты</h2>
+              <p class="contacts__subtitle">
+                Мы всегда готовы помочь вам с выбором стильной и качественной
+                одежды. Свяжитесь с нами любым удобным способом.
+              </p>
+            </div>
+
+            <address class="contacts__address">
+              <p class="contacts__address-text">
+                <i data-lucide="map-pin"></i>
+                г. Иркутск, ул. Розы-Люксембург, 215в, ТРЦ "Европарк", 216
+                павильон, 2 этаж
+              </p>
+
+              <p class="contacts__address-text">
+                <i data-lucide="map-pin"></i>
+                г. Иркутск, ул. ​Волжская, 15​, ТЦ "Orange", 15​217 павильон, 2
+                этаж
+              </p>
+
+              <p class="contacts__address-text">
+                <i data-lucide="map-pin"></i>
+                г. Иркутск, ​ул. Свердлова, ​36, ТЦ "Сезон", 36​233 павильон, 2
+                этаж
+              </p>
+
+              <p class="contacts__address-text">
+                <i data-lucide="clock"></i>
+                Ежедневно: 10:00-20:00
+              </p>
+
+              <p class="contacts__address-text">
+                <i data-lucide="phone"></i>
+                <span>
+                  <a href="tel:+7‒902‒511‒85‒02" class="contacts__link"
+                    >+7‒902‒511‒85‒02</a
+                  >
+                  (основной)<br />
+                  <a href="tel:+7‒902‒515‒85‒02" class="contacts__link"
+                    >+7‒902‒515‒85‒02</a
+                  >
+                  (служба контроля качества)
+                </span>
+              </p>
+
+              <p class="contacts__address-text">
+                <i data-lucide="mail"></i>
+                <a href="mailto:mag_mister@mail.ru" class="contacts__link"
+                  >mag_mister@mail.ru</a
+                >
+              </p>
+
+              <p class="contacts__address-text">
+                <i data-lucide="instagram"></i>
+                <a
+                  href="https://instagram.com/mister_salon"
+                  class="contacts__link"
+                  >@mister_salon</a
+                >
+              </p>
+            </address>
+          </div>
+
+          <!-- Форма обратной связи -->
+          <div class="contacts__form">
+            <form class="feedback-form">
+              <div class="feedback-form__group">
+                <label for="name" class="feedback-form__label">Имя</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="feedback-form__input"
+                  placeholder="Ваше имя"
+                  required
+                />
+              </div>
+
+              <div class="feedback-form__group">
+                <label for="phone" class="feedback-form__label">Телефон</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  class="feedback-form__input"
+                  placeholder="+7 (999) 123-45-67"
+                  required
+                />
+              </div>
+
+              <div class="feedback-form__group">
+                <label for="email" class="feedback-form__label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="feedback-form__input"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+
+              <div class="feedback-form__group">
+                <label for="message" class="feedback-form__label"
+                  >Сообщение</label
+                >
+                <textarea
+                  id="message"
+                  class="feedback-form__textarea"
+                  placeholder="Ваш вопрос или пожелание..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="feedback-form__submit">
+                Отправить сообщение
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Карта -->
+        <div
+          class="contacts__map"
+          aria-label="Карта с местоположением магазина"
+        >
+          <div class="contacts__map-placeholder">Мы здесь</div>
+          <!-- Здесь будет встроена карта (например, Google Maps) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__top">
+          <!-- Логотип -->
+          <div class="footer__logo-wrapper">
+            <a href="index.html" class="footer__logo">
+              <span class="footer__logo-text">MISTER</span>
+            </a>
+            <p class="footer__copyright">
+              &copy; 2024 Mister. Все права защищены.
+            </p>
+          </div>
+
+          <!-- Основные меню -->
+          <div class="footer__menus">
+            <!-- Меню 1: О салоне -->
+            <nav class="footer__menu" aria-label="О салоне">
+              <h3 class="footer__menu-title">О салоне</h3>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  Мужской салон Mister предлагает качественную одежду и
+                  индивидуальный подход к каждому клиенту.
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Меню 2: Каталог -->
+            <nav class="footer__menu" aria-label="Каталог">
+              <h3 class="footer__menu-title">Каталог</h3>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="catalog.html#suits" class="footer__menu-link"
+                    >Костюмы</a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a href="catalog.html#shirts" class="footer__menu-link"
+                    >Рубашки</a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a href="catalog.html#pants" class="footer__menu-link"
+                    >Брюки</a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a href="catalog.html#jackets" class="footer__menu-link"
+                    >Пиджаки</a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a href="catalog.html#accessories" class="footer__menu-link"
+                    >Аксессуары</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Меню 3: Информация -->
+            <nav class="footer__menu" aria-label="Информация">
+              <h3 class="footer__menu-title">Информация</h3>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#delivery" class="footer__menu-link">Доставка</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#returns" class="footer__menu-link"
+                    >Возврат товара</a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#sizes" class="footer__menu-link">Размерная сетка</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#care" class="footer__menu-link">Уход за одеждой</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#tailoring" class="footer__menu-link"
+                    >Индивидуальный пошив</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Меню 4: Контакты -->
+            <nav class="footer__menu" aria-label="Контакты">
+              <h3 class="footer__menu-title">Контакты</h3>
+              <address class="footer__contacts">
+                <p class="footer__contacts-item">
+                  <i data-lucide="map-pin"></i>
+                  г. Иркутск, ул. Розы-Люксембург, 215в
+                </p>
+                <p class="footer__contacts-item">
+                  <i data-lucide="phone"></i>
+                  <a href="tel:+74951234567" class="footer__contacts-link"
+                    >+7‒902‒515‒85‒02</a
+                  >
+                </p>
+                <p class="footer__contacts-item">
+                  <i data-lucide="mail"></i>
+                  <a
+                    href="mailto:info@mister-salon.ru"
+                    class="footer__contacts-link"
+                    >mag_mister@mail.ru</a
+                  >
+                </p>
+                <p class="footer__contacts-item">
+                  <i data-lucide="clock"></i>
+                  Ежедневно: 10:00-20:00
+                </p>
+              </address>
+            </nav>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__bottom-content">
+            <nav class="footer__legal">
+              <a href="#privacy" class="footer__legal-link"
+                >Политика конфиденциальности</a
+              >
+              <a href="#terms" class="footer__legal-link"
+                >Условия использования</a
+              >
+              <a href="#offer" class="footer__legal-link">Публичная оферта</a>
+            </nav>
+            <p class="footer__legal-info">
+              ИП Иванов И.И., ИНН: 123456789012<br />
+              Лицензия на розничную торговлю № 12345
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="js/animations.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
