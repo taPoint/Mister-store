@@ -41,7 +41,6 @@ function initializeAnimations() {
   setupAboutAnimations();
   setupCategoriesAnimations();
   setupAdvantagesAnimations();
-  setupReviewsAnimations();
   setupGalleryAnimations();
   setupProductsAnimations();
   setupContactsAnimations();
